@@ -1,20 +1,18 @@
+-- Set up the gamemode
+DeriveGamemode( "sandbox" );
+GM.Name = "The J"
+
+-- Define global variables
+CAKE = {  };
+CAKE.Running = false;
+CAKE.Loaded = false;
+
+-- Server Includes
+require( "glon" )
+if not(datastream) then  
+    require("datastream");  
+end  
 
 AddCSLuaFile( "cl_init.lua" )
 AddCSLuaFile( "shared.lua" )
-
 include( 'shared.lua' )
-
-
-// Serverside only stuff goes here
-
-/*---------------------------------------------------------
-   Name: gamemode:PlayerLoadout( )
-   Desc: Give the player the default spawning weapons/ammo
----------------------------------------------------------*/
-function GM:PlayerLoadout( pl )
-
-	pl:GiveAmmo( 255,	"Pistol", 		true )
-	
-	pl:Give( "empty_weapon" )
-	
-end

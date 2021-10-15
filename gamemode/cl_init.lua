@@ -53,29 +53,6 @@ CAKE.Loaded = true;
 -- Initialize the gamemode
 function GM:Initialize( )
 
-	CAKE.Running = true;
-
-	self.BaseClass:Initialize( );
-
-end
-
-function GM:Think( )
-
-	if( vgui and readysent == false ) then -- VGUI is initalized, tell the server we're ready for character creation.
-	
-		LocalPlayer( ):ConCommand( "rp_ready\n" );
-		readysent = true;
-		
-	end
-	
-end
-
-function GM:ForceDermaSkin()
-
-	return CAKE.Skin
-	
-end
-
 function GM:StartChat()
         return true -- That's what the chatbox is there for.
 end

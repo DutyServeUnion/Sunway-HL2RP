@@ -1,6 +1,6 @@
 -- Set up the gamemode
 DeriveGamemode( "sandbox" );
-
+-- sus?
 --Initializing global variables. Don't touch this
 CAKE = {  };
 CAKE.Running = false;

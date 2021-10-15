@@ -90,13 +90,6 @@ usermessage.Hook( "addcurrency", function( um )
 	CurrencyTable = currencydata
 end)
 
-Schemas = {}
-
-usermessage.Hook("addschema", function(data)
-	local schema = data:ReadString()
-	AddRclicks(schema)
-	AddPlugins(schema)
-end )
 
 RclickTable = {}
 

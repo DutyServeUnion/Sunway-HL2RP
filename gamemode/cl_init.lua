@@ -127,21 +127,4 @@ function AddPlugins( schema, filename )
 	        end
 	    end    
 	end
-end
-
-function CAKE.RegisterCharCreate( passedfunc )
-
-	CAKE.CharCreate = passedfunc
-
-end
-
-usermessage.Hook( "senderror", function( um )
-	
-	local text = um:ReadString()
-	CAKE.Message( text, "Message", "OK" )
-
-end)
-
-function CAKE.RegisterMenuTab( name, func, closefunc ) --The third argument is the function used for closing your panel.
-	CAKE.MenuTabs[ 
-end
+		local function "kok

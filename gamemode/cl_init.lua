@@ -1,4 +1,4 @@
-- Set up the gamemode
+-- Set up the gamemode
 DeriveGamemode( "sandbox" );
 
 --Initializing global variables. Don't touch this
@@ -53,6 +53,29 @@ CAKE.Loaded = true;
 -- Initialize the gamemode
 function GM:Initialize( )
 
+	CAKE.Running = true;
+
+	self.BaseClass:Initialize( );
+
+end
+
+function GM:Think( )
+
+	if( vgui and readysent == false ) then -- VGUI is initalized, tell the server we're ready for character creation.
+	
+		LocalPlayer( ):ConCommand( "rp_ready\n" );
+		readysent = true;
+		
+	end
+	
+end
+
+function GM:ForceDermaSkin()
+
+	return CAKE.Skin
+	
+end
+
 function GM:StartChat()
         return true -- That's what the chatbox is there for.
 end
@@ -90,6 +113,13 @@ usermessage.Hook( "addcurrency", function( um )
 	CurrencyTable = currencydata
 end)
 
+Schemas = {}
+
+usermessage.Hook("addschema", function(data)
+	local schema = data:ReadString()
+	AddRclicks(schema)
+	AddPlugins(schema)
+end )
 
 RclickTable = {}
 
@@ -127,4 +157,45 @@ function AddPlugins( schema, filename )
 	        end
 	    end    
 	end
-		local function "kok
+end
+
+function CAKE.RegisterCharCreate( passedfunc )
+
+	CAKE.CharCreate = passedfunc
+
+end
+
+usermessage.Hook( "senderror", function( um )
+	
+	local text = um:ReadString()
+	CAKE.Message( text, "Message", "OK" )
+
+end)
+
+function CAKE.RegisterMenuTab( name, func, closefunc ) --The third argument is the function used for closing your panel.
+	CAKE.MenuTabs[ name ] = {}
+	CAKE.MenuTabs[ name ][ "function" ] = func or function() end
+	CAKE.MenuTabs[ name ][ "closefunc" ] = closefunc or function() end
+end
+
+function CAKE.CloseTabs()
+	for k, v in pairs( CAKE.MenuTabs ) do
+		v[ "closefunc" ]()
+	end
+	CAKE.ActiveTab = nil
+end
+
+function CAKE.SetActiveTab( name )
+	--CAKE.MenuOpen = true
+	CAKE.CloseTabs()
+	if CAKE.MenuTabs and CAKE.MenuTabs[ name ] then
+		CAKE.MenuTabs[ name ][ "function" ]()
+	else
+		timer.Simple( 1, function()
+			if CAKE.MenuTabs and CAKE.MenuTabs[ name ] then
+				CAKE.MenuTabs[ name ][ "function" ]()
+			end
+		end)
+	end
+	CAKE.ActiveTab = name
+end

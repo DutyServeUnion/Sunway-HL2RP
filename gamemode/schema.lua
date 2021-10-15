@@ -28,3 +28,6 @@ function CAKE.LoadSchema( schema )
 
 		if v != "." and v != ".." then
 			CAKE.LoadPlugin( schema, v )
+		end
+		
+	end

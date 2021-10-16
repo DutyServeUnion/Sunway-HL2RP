@@ -1,4 +1,4 @@
--NPC Animations V4
+--NPC Animations V4
 
 local meta = FindMetaTable( "Player" )
 local model
@@ -986,4 +986,12 @@ function GM:DoAnimationEvent( ply, event, data ) -- This is for gestures.
 				else
         ply:AnimRestartGesture( GESTURE_SLOT_ATTACK_AND_RELOAD, ACT_GESTURE_RELOAD_SMG1 )
 				end
+    
+    return ACT_INVALID
+		elseif event == PLAYERANIMEVENT_CANCEL_RELOAD then
+    
+    ply:AnimResetGestureSlot( GESTURE_SLOT_ATTACK_AND_RELOAD )
+    
+    return ACT_INVALID
+    end
     

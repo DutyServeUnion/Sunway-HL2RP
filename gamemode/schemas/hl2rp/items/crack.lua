@@ -3,7 +3,7 @@ ITEM.Class = "crack";
 ITEM.Description = "Head asplode!";
 ITEM.Model = "models/props_lab/jar01a.mdl";
 ITEM.Purchaseable = true;
-ITEM.Price = 50;
+ITEM.Price = 100;
 ITEM.ItemGroup = 2;
 
 function ITEM:Drop(ply)

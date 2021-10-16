@@ -995,3 +995,17 @@ function GM:DoAnimationEvent( ply, event, data ) -- This is for gestures.
     return ACT_INVALID
     end
     
+    if event == PLAYERANIMEVENT_JUMP then
+    
+    ply.Jumping = true
+    ply.FirstJumpFrame = true
+    ply.JumpStartTime = CurTime()
+    
+    ply:AnimRestartMainSequence()
+    
+    return ACT_INVALID
+    
+		end
+ 
+    return nil
+end

@@ -1,6 +1,6 @@
-"Gamemode"
+"sunway"
 {
-	"name"		"Skeleton"
+	"name"		"Sunway HL2RP"
 	"version"	"1.0"
 
 	"author_name"	""
@@ -9,5 +9,5 @@
 	
 	"icon"		""
 	"info"		""
-	"hide"		""
+	"hide"		"0"
 }

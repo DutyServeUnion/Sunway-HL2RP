@@ -2,7 +2,7 @@ ITEM.Name = "Headcrab Pill";
 ITEM.Class = "headcrab_pill";
 ITEM.Description = "Use this to become a headcrab";
 ITEM.Model = "models/props_lab/jar01b.mdl";
-ITEM.Purchaseable = false;
+ITEM.Purchaseable = true;
 ITEM.Price = 3;
 ITEM.ItemGroup = 1;
 

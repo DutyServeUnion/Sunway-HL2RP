@@ -127,15 +127,15 @@ function SCHEMA.SetUp( )
 	--Recruit
 	CAKE.AddMetroPoliceRank( "rct", "Civil Protection Recruit", {"clothing_police", "weapon_zipties", "weapon_stunstick" }, 1)
 	--CP-1
-	CAKE.AddMetroPoliceRank( "cp1", "Civil Protection Officer itention 5", {"clothing_police", "helmet_police", "weapon_zipties", "weapon_stunstick", "weapon_pistol", "weapon_smg1" },2)
+	CAKE.AddMetroPoliceRank( "cp1", "Civil Protection Officer i5", {"clothing_police", "helmet_police", "weapon_zipties", "weapon_stunstick", "weapon_pistol", "weapon_smg1" },2)
 	--CP-2
-	CAKE.AddMetroPoliceRank( "cp2", "Civil Protection Officer intention 4", {"clothing_police", "helmet_police", "weapon_zipties", "weapon_stunstick", "weapon_pistol", "weapon_smg1" },3)
+	CAKE.AddMetroPoliceRank( "cp2", "Civil Protection Officer i4", {"clothing_police", "helmet_police", "weapon_zipties", "weapon_stunstick", "weapon_pistol", "weapon_smg1" },3)
 	--CP-3
-	CAKE.AddMetroPoliceRank( "cp3", "Civil Protection Officer intention 3", {"clothing_police", "helmet_police", "weapon_zipties", "weapon_stunstick", "weapon_pistol", "weapon_smg1" },4)
+	CAKE.AddMetroPoliceRank( "cp3", "Civil Protection Officer i3", {"clothing_police", "helmet_police", "weapon_zipties", "weapon_stunstick", "weapon_pistol", "weapon_smg1" },4)
 	--TL
-	CAKE.AddMetroPoliceRank( "tl", "Civil Protection Officer intention 2", {"clothing_police", "helmet_police", "weapon_zipties", "weapon_stunstick", "weapon_pistol", "weapon_smg1", "weapon_shotgun" }, 5, false, true, true )
+	CAKE.AddMetroPoliceRank( "tl", "Civil Protection Officer i2", {"clothing_police", "helmet_police", "weapon_zipties", "weapon_stunstick", "weapon_pistol", "weapon_smg1", "weapon_shotgun" }, 5, false, true, true )
 	--Medic
-	CAKE.AddMetroPoliceRank( "m", "Civil Protection Officer intention 1", {"clothing_police", "helmet_police", "weapon_zipties", "weapon_stunstick", "weapon_pistol", "weapon_smg1", "firstaidkit", "small_medikit", "small_medikit", "small_medikit" },3)
+	CAKE.AddMetroPoliceRank( "m", "Civil Protection Officer i1", {"clothing_police", "helmet_police", "weapon_zipties", "weapon_stunstick", "weapon_pistol", "weapon_smg1", "firstaidkit", "small_medikit", "small_medikit", "small_medikit" },3)
 	--Engineer
 	CAKE.AddMetroPoliceRank( "en", "Civil Protection Officer Rank Leader", {"clothing_police", "helmet_police", "helmet_elite", "weapon_zipties", "weapon_stunstick", "weapon_pistol", "weapon_smg1" }, 3)
 	--Division Leader

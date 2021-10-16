@@ -28,3 +28,31 @@ function ITEM:UseItem(ply)
 	self:Remove();
 
 end
+
+
+-- Clothing
+
+ITEM.Name = "Example Clothing";
+ITEM.Class = "example_clothing";
+ITEM.Description = "example;
+ITEM.Model = "models/Kleiner.mdl";
+ITEM.Purchaseable = true;	-- keep this on true if you want the ply to buy  it
+ITEM.Price = 1; 		-- already explained above
+ITEM.ItemGroup = 1; 		-- this was already explained
+ITEM.Flags = {  		-- the flags you would like 
+	"nogloves"
+}
+function ITEM:Drop(ply) -- keep this shit on
+
+end
+
+function ITEM:Pickup(ply) -- keep this shit on
+
+	self:Remove();
+
+end
+
+function ITEM:UseItem(ply) -- keep on
+	self:Remove();
+end
+

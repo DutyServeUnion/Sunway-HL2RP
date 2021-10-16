@@ -12,7 +12,8 @@ require( "glon" )
 if not(datastream) then  
     require("datastream");  
 end  
-
+AddCSLua( "cl_init.lua" )
+AddCSLua( "cl_binds.lua" )
 include( "shared.lua" ); -- Shared Functions
 include( "log.lua" ); -- Logging functions
 include( "configuration.lua" ); -- Configuration data

@@ -14,6 +14,7 @@ if not(datastream) then
 end  
 AddCSLua( "cl_init.lua" )
 AddCSLua( "cl_binds.lua" )
+AddCSLua( "shared.lua" ) 
 include( "shared.lua" ); -- Shared Functions
 include( "log.lua" ); -- Logging functions
 include( "configuration.lua" ); -- Configuration data

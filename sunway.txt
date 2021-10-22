@@ -1,13 +1,8 @@
 "sunway"
 {
-	"name"		"Sunway HL2RP"
-	"version"	"1.0"
-
-	"author_name"	""
-	"author_email"	""
-	"author_url"	""
-	
-	"icon"		""
-	"info"		""
-	"hide"		"0"
-}
+	"base"		"sandbox"
+	"title"		"Sunway"
+	"maps"		"^gm_"
+	"category"	"rp"
+	"menusystem"	"1"
+	"workshopid"	""

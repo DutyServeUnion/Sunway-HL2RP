@@ -54,7 +54,7 @@ function ccAdmin( ply, cmd, args )
 	
 	if( cmd == 0 ) then
 	
-		CAKE.SendChat( ply, "That is not a valid command!" );
+		CAKE.SendChat( ply, "[ERROR] That is not a valid command!" );
 		return;
 		
 	end
@@ -74,7 +74,7 @@ function ccAdmin( ply, cmd, args )
 			
 		else
 
-			CAKE.PrintConsole( "You cannot run this command from server console!" );
+			CAKE.PrintConsole( "[ERROR] You cannot run this command from server console!" );
 			
 		end
 		

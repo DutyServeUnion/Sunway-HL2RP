@@ -56,3 +56,14 @@ function ITEM:UseItem(ply) -- keep on
 	self:Remove();
 end
 
+-[[ Every possible item outcome --]]
+
+ITEM.Name = 
+ITEM.Class = 
+ITEM.Description = 
+ITEM.Model = 
+ITEM.Purchaseable = 
+ITEM.Price = 
+ITEM.ItemGroup = 
+ITEM.Flag =
+

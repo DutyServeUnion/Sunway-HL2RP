@@ -71,4 +71,4 @@ ITEM.Offset = Vector( insert vector )
 ITEM.OffsetAngle = Angle( insert angle)				-- NO SEMI COLONS OK????
 ITEM.Bone = 
 ITEM.WeaponType = 
-
+ITEM.Weight =  

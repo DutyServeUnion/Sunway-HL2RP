@@ -83,6 +83,6 @@ local function ccWakeUp( ply, cmd, args )
 		CAKE.UnconciousMode( ply )
 	end
 
-ene
+end
 -- RP_WAKE up force a player up
 concommand.Add( "rp_wakeup", ccWakeUp )

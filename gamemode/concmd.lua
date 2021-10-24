@@ -59,8 +59,7 @@ function ccGiveMoney( ply, cmd, args )
 end
 concommand.Add( "rp_givemoney", ccGiveMoney );	
 
---Makes you fall unconcious.
-local function ccKnockOut( ply, cmd, args )
+
 
 	CAKE.UnconciousMode( ply )
 	

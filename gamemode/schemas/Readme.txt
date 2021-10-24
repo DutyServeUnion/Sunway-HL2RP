@@ -66,4 +66,9 @@ ITEM.Purchaseable =
 ITEM.Price = 
 ITEM.ItemGroup = 
 ITEM.Flag =
+-- weapons                                                          
+ITEM.Offset = Vector( insert vector ) 
+ITEM.OffsetAngle = Angle( insert angle)				-- NO SEMI COLONS OK????
+ITEM.Bone = 
+ITEM.WeaponType = 
 

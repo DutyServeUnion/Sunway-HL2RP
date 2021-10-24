@@ -61,6 +61,16 @@ concommand.Add( "rp_givemoney", ccGiveMoney );
 
 
 
+
+
+
+
+
+
+--Makes you fall unconcious.
+local function ccKnockOut( ply, cmd, args )
+
+
 	CAKE.UnconciousMode( ply )
 	
 end
@@ -73,5 +83,6 @@ local function ccWakeUp( ply, cmd, args )
 		CAKE.UnconciousMode( ply )
 	end
 
-end
+ene
+-- RP_WAKE up force a player up
 concommand.Add( "rp_wakeup", ccWakeUp )
